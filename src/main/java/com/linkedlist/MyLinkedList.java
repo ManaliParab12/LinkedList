@@ -69,6 +69,19 @@ public class MyLinkedList {
         return null;
     }
 
+    public INode insertBetweenNodes(INode head, INode newNode, int position){
+        INode previous = head;
+        int count = 1;
+        while (count < position - 1){
+            previous = previous.getNext();
+            count++;
+        }
+        INode current = previous.getNext();
+        newNode.setNext(current);
+        previous.setNext(newNode);
+        return head;
+    }
+
     public void printMyNode() {
         StringBuffer myNodes = new StringBuffer("My Nodes : ");
         INode tempNode = head;
