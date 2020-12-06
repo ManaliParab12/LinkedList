@@ -1,8 +1,9 @@
 package com.linkedlist;
 
-public class MyLinkedList {
+public class MyLinkedList <K extends Comparable<K>> {
     public INode  head;
     public INode tail;
+    public K Key;
 
     public MyLinkedList() {
         this.head = null;
@@ -106,6 +107,19 @@ public class MyLinkedList {
         return count;
     }
 
+    public void ascendingOrderLinkedList (INode<K> newNode ) {
+        if (head == null || ((Comparable<K>) head.getKey()).compareTo(newNode.getKey()) > 0) {
+            newNode.setNext(head);
+            head = newNode;
+        } else {
+            INode<K> tempNode = head;
+            while (tempNode.getNext() != null && ((Comparable<K>) tempNode.getNext().getKey()).compareTo(newNode.getKey()) < 0) {
+                tempNode = tempNode.getNext();
+            }
+            newNode.setNext(tempNode.getNext());
+            tempNode.setNext(newNode);
+        }
+    }
 
     public void printMyNode() {
         StringBuffer myNodes = new StringBuffer("My Nodes : ");

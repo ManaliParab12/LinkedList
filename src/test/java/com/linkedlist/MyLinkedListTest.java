@@ -136,4 +136,21 @@ public class MyLinkedListTest {
         Assert.assertTrue(result);
     }
 
+    @Test
+    public void given4NumbersWhenAddedInAscendingOrderShouldPassLinkedList() {
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(40);
+        MyNode<Integer> myFourthNode = new MyNode<>(70);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.ascendingOrderLinkedList(myFirstNode);
+        myLinkedList.ascendingOrderLinkedList(mySecondNode);
+        myLinkedList.ascendingOrderLinkedList(myThirdNode);
+        myLinkedList.ascendingOrderLinkedList(myFourthNode);
+        myLinkedList.printMyNode();
+        boolean result = myLinkedList.head.equals(mySecondNode) &&
+                myLinkedList.head.getNext().equals(myThirdNode) &&  myLinkedList.head.getNext().getNext().equals(myFirstNode) &&
+                myLinkedList.tail.equals(myFourthNode);
+        Assert.assertTrue(result);
+    }
 }
