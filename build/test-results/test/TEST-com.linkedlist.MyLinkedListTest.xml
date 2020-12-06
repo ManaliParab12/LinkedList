@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlist.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-05T15:32:33" hostname="ADMIN-PC" time="0.007">
+<testsuite name="com.linkedlist.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-06T06:46:40" hostname="ADMIN-PC" time="0.01">
   <properties/>
-  <testcase name="given4NumbersWhenInsertingThirdInBetweenShouldPassLinkedListResult" classname="com.linkedlist.MyLinkedListTest" time="0.007"/>
-  <system-out><![CDATA[My Nodes : 56->30->40->70
+  <testcase name="given4NumbersWhenDeletingThirdInBetweenShouldPassLinkedListResult" classname="com.linkedlist.MyLinkedListTest" time="0.01"/>
+  <system-out><![CDATA[size of linklist:3
+My Nodes : 56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

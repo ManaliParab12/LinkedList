@@ -82,6 +82,31 @@ public class MyLinkedList {
         return head;
     }
 
+    public INode deleteAtPosition(INode head, int position) {
+        INode previous = head;
+        int count = 1;
+        while (count < position - 1) {
+            previous = previous.getNext();
+            count++;
+        }
+        INode current = previous.getNext();
+        previous.setNext(current.getNext());
+        current = null;
+        System.out.println("size of linklist:"+length(head));
+        return current;
+    }
+
+    public int length(INode head){
+        INode tempNode = head;
+        int count = 0;
+        while (tempNode!=null){
+            count++;
+            tempNode=tempNode.getNext();
+        }
+        return count;
+    }
+
+
     public void printMyNode() {
         StringBuffer myNodes = new StringBuffer("My Nodes : ");
         INode tempNode = head;
