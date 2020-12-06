@@ -11,12 +11,15 @@ public class MyStack {
         myLinkedList.add(myNode);
     }
 
-    public INode peak() {
-        return myLinkedList.head;
-    }
-
     public void printStack() {
         myLinkedList.printMyNode();
     }
 
+    public INode peak() {
+        return myLinkedList.head;
+    }
+
+    public INode pop() {
+        return myLinkedList.popFirst();
+    }
 }

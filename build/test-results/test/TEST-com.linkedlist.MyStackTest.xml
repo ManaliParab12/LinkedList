@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlist.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-06T12:27:07" hostname="ADMIN-PC" time="0.008">
+<testsuite name="com.linkedlist.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-06T12:43:51" hostname="ADMIN-PC" time="0.009">
   <properties/>
-  <testcase name="given3NumbersWhenAddedToStackShouldHaveLastAddedNode" classname="com.linkedlist.MyStackTest" time="0.008"/>
+  <testcase name="given3NumbersWhenAddedToStackShouldHaveLastAddedNode" classname="com.linkedlist.MyStackTest" time="0.009"/>
   <system-out><![CDATA[My Nodes : 56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
