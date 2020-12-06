@@ -93,11 +93,11 @@ public class MyLinkedList <K extends Comparable<K>> {
         INode current = previous.getNext();
         previous.setNext(current.getNext());
         current = null;
-        System.out.println("size of linklist:"+length(head));
+        System.out.println("size of linklist:"+length());
         return current;
     }
 
-    public int length(INode head){
+    public int length(){
         INode tempNode = head;
         int count = 0;
         while (tempNode!=null){

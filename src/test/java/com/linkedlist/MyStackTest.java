@@ -29,7 +29,22 @@ public class MyStackTest {
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
         INode popedNode = myStack.pop();
-        myStack.printStack();
         Assert.assertEquals(myThirdNode, popedNode);
+    }
+
+
+    @Test
+    public void poppingAllNumbersFromStackWhenEmptyShouldPass() {
+        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyStack myStack = new MyStack();
+        myStack.push(myFirstNode);
+        myStack.push(mySecondNode);
+        myStack.push(myThirdNode);
+        myStack.isEmpty();
+        myStack.printStack();
+        boolean result = myStack.makeStackEmpty();
+       Assert.assertTrue(result);
     }
 }
