@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlist.MyQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-06T15:48:25" hostname="ADMIN-PC" time="0.009">
+<testsuite name="com.linkedlist.MyQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-06T16:21:50" hostname="ADMIN-PC" time="0.008">
   <properties/>
-  <testcase name="given3NumbersWhenAddedToStackShouldHaveLastAddedNode" classname="com.linkedlist.MyQueueTest" time="0.009"/>
-  <system-out><![CDATA[My Nodes : 70->30->56
+  <testcase name="given3NumbersWhenDequeuingFromBeginningShouldEmptyTheQueue" classname="com.linkedlist.MyQueueTest" time="0.008"/>
+  <system-out><![CDATA[My Nodes : 56->30->70
+It is Empty
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

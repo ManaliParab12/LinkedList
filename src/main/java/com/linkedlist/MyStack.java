@@ -30,10 +30,10 @@ public class MyStack {
 
     public boolean isEmpty() {
         if (length() == 0) {
-            System.out.println("Stack is Empty");
+            System.out.println("It is Empty");
             return true;
         } else {
-            System.out.println("Stack is not Empty");
+            System.out.println("It is not Empty");
             return false;
         }
     }
