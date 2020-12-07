@@ -3,11 +3,10 @@ package com.linkedlist;
 public class MyQueue {
 
     private final MyLinkedList myLinkedList;
-    private final MyStack myStack;
+    private final MyStack myStack = new MyStack();
 
     public MyQueue() {
         this.myLinkedList = new MyLinkedList();
-        this.myStack = new MyStack();
     }
 
     public void enqueue(INode myNode) {

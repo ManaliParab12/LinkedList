@@ -92,7 +92,7 @@ public class MyLinkedListTest {
         myLinkedList.add(myFirstNode);
         myLinkedList.append(mySecondNode);
         myLinkedList.append(myThirdNode);
-        myLinkedList.search(mySecondNode);
+        myLinkedList.search(30);
         boolean result =  myLinkedList.head.getNext().equals(mySecondNode);
         Assert.assertTrue(result);
     }

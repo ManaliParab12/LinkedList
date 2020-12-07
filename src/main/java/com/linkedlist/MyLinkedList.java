@@ -1,9 +1,9 @@
 package com.linkedlist;
 
-public class MyLinkedList <K extends Comparable<K>> {
+public class MyLinkedList <k extends Comparable<k>> {
     public INode  head;
     public INode tail;
-    public K Key;
+    public k Key;
 
     public MyLinkedList() {
         this.head = null;
@@ -23,7 +23,7 @@ public class MyLinkedList <K extends Comparable<K>> {
         }
     }
 
-    public void append(INode myNode) {
+    public void append(INode<k> myNode) {
         if(this.head == null) {
             this.head = myNode;
         }
@@ -58,7 +58,7 @@ public class MyLinkedList <K extends Comparable<K>> {
     }
 
 
-    public INode search(INode searchKey) {
+    public INode search(k searchKey) {
 
         INode tempNode = this.head;
         while (tempNode != null) {
@@ -107,13 +107,13 @@ public class MyLinkedList <K extends Comparable<K>> {
         return count;
     }
 
-    public void ascendingOrderLinkedList (INode<K> newNode ) {
-        if (head == null || ((Comparable<K>) head.getKey()).compareTo(newNode.getKey()) > 0) {
+    public void ascendingOrderLinkedList (INode<k> newNode ) {
+        if (head == null || ((Comparable<k>) head.getKey()).compareTo(newNode.getKey()) > 0) {
             newNode.setNext(head);
             head = newNode;
         } else {
-            INode<K> tempNode = head;
-            while (tempNode.getNext() != null && ((Comparable<K>) tempNode.getNext().getKey()).compareTo(newNode.getKey()) < 0) {
+            INode<k> tempNode = head;
+            while (tempNode.getNext() != null && ((Comparable<k>) tempNode.getNext().getKey()).compareTo(newNode.getKey()) < 0) {
                 tempNode = tempNode.getNext();
             }
             newNode.setNext(tempNode.getNext());
@@ -133,4 +133,10 @@ public class MyLinkedList <K extends Comparable<K>> {
         System.out.println(myNodes);
     }
 
+    @Override
+    public String toString() {
+        return "MyLinkedList{" +
+                "head=" + head +
+                '}';
+    }
 }
