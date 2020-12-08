@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlist.MyLinkedHashMapTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-07T11:51:49" hostname="ADMIN-PC" time="0.009">
+<testsuite name="com.linkedlist.MyLinkedHashMapTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-08T11:01:01" hostname="ADMIN-PC" time="0.039">
   <properties/>
-  <testcase name="givenASentenceWhenWordsAreAddedToListShouldReturnParanoidFrequency" classname="com.linkedlist.MyLinkedHashMapTest" time="0.009">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.linkedlist.MyLinkedHashMapTest.givenASentenceWhenWordsAreAddedToListShouldReturnParanoidFrequency(MyLinkedHashMapTest.java:21)
+  <testcase name="givenASentenceWhenRemoveAWordFromListShouldPass" classname="com.linkedlist.MyLinkedHashMapTest" time="0.039">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.linkedlist.MyLinkedHashMapTest.givenASentenceWhenRemoveAWordFromListShouldPass(MyLinkedHashMapTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,6 +56,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[MyLinkedHashMap List{[MyLinkedList{head=MyMapNode{K=themselves V=1}}, MyLinkedList{head=MyMapNode{K=but V=1}->MyMapNode{K=keep V=1}}, MyLinkedList{head=MyMapNode{K=are V=1}->MyMapNode{K=they V=1}->MyMapNode{K=are V=1}->MyMapNode{K=they V=1}->MyMapNode{K=into V=1}}, null, null, MyLinkedList{head=MyMapNode{K=paranoids V=1}->MyMapNode{K=putting V=1}}, MyLinkedList{head=MyMapNode{K=deliberately V=1}}, MyLinkedList{head=MyMapNode{K=not V=1}->MyMapNode{K=avoidable V=1}}, MyLinkedList{head=MyMapNode{K=paranoid V=1}->MyMapNode{K=because V=1}->MyMapNode{K=paranoid V=1}->MyMapNode{K=because V=1}->MyMapNode{K=paranoid V=1}}, MyLinkedList{head=MyMapNode{K=situations V=1}}]}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

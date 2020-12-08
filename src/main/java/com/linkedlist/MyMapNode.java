@@ -1,6 +1,6 @@
 package com.linkedlist;
 
-public class MyMapNode<k, v> implements  INode<k>{
+public class MyMapNode<k, v> implements  INode<k> {
     k key;
     v value;
     MyMapNode<k, v> next;
@@ -23,7 +23,7 @@ public class MyMapNode<k, v> implements  INode<k>{
     }
 
     public v getValue() {
-        return this.value;
+        return value;
     }
 
     public void setValue(v value) {
@@ -31,7 +31,7 @@ public class MyMapNode<k, v> implements  INode<k>{
     }
 
     @Override
-    public INode<k> getNext() {
+    public INode getNext() {
         return next;
     }
 

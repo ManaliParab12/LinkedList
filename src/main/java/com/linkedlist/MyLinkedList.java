@@ -1,6 +1,6 @@
 package com.linkedlist;
 
-public class MyLinkedList <k extends Comparable<k>> {
+public class MyLinkedList <k> {
     public INode  head;
     public INode tail;
     public k Key;
@@ -95,6 +95,21 @@ public class MyLinkedList <k extends Comparable<k>> {
         current = null;
         System.out.println("size of linklist:"+length());
         return current;
+    }
+    
+    public INode<k> delete(INode<k> myNode )
+    {
+        INode<k> nodeToRemove = search(myNode.getKey());
+        if(nodeToRemove != null) {
+            INode tempNode = head;
+            while (tempNode.getNext() != nodeToRemove) {
+                tempNode = tempNode.getNext();
+            }
+            tempNode.setNext(nodeToRemove.getNext());
+            return nodeToRemove;
+        } else {
+            return null;
+            }
     }
 
     public int length(){
