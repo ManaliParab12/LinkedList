@@ -1,6 +1,7 @@
 package com.linkedlist;
 
-public class MyHashMap<k extends Comparable<k>, v> {
+@SuppressWarnings("unchecked")
+public class MyHashMap<k, v> {
 
      MyLinkedList<k> myLinkedList;
 
@@ -9,12 +10,12 @@ public class MyHashMap<k extends Comparable<k>, v> {
     }
 
     public v get(k key) {
-       MyMapNode<k, v> myMapNode = (MyMapNode<k, v>) myLinkedList.search(key);
+       MyMapNode<k, v> myMapNode = (MyMapNode<k, v>) this.myLinkedList.search(key);
        return (myMapNode == null) ? null : myMapNode.getValue();
     }
 
     public void add(k key, v value) {
-        MyMapNode<k, v> myMapNode = (MyMapNode<k, v>) myLinkedList.search(key);
+        MyMapNode<k, v> myMapNode = (MyMapNode<k, v>)this.myLinkedList.search(key);
         if(myMapNode == null) {
             myMapNode = new MyMapNode<>(key, value);
             this.myLinkedList.append(myMapNode);
@@ -25,8 +26,6 @@ public class MyHashMap<k extends Comparable<k>, v> {
 
     @Override
     public String toString() {
-        return "MyHashMap{" +
-                "myLinkedList=" + myLinkedList +
-                '}';
+        return "MyHashMapNodes {" + myLinkedList + "}";
     }
 }

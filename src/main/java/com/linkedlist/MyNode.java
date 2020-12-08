@@ -20,7 +20,8 @@ public class MyNode<K> implements INode<K>{
         this.key = key;
     }
 
-    public INode<K> getNext() {
+    @Override
+    public INode getNext() {
         return next;
     }
 
