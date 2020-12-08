@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlist.MyBinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-08T05:37:52" hostname="ADMIN-PC" time="0.005">
+<testsuite name="com.linkedlist.MyBinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-08T13:45:30" hostname="ADMIN-PC" time="0.064">
   <properties/>
-  <testcase name="givenMultipleNumbersWhenAddedToBinaryTreeShouldreturnSize" classname="com.linkedlist.MyBinaryTreeTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenAnumberToSearchWhenMatchShouldPass" classname="com.linkedlist.MyBinaryTreeTest" time="0.064"/>
+  <system-out><![CDATA[yes
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
